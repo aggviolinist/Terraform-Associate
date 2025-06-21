@@ -6,4 +6,4 @@ terraform init
 terraform plan
 terraform apply
 ```
->![Alt text](/images/bucko.png?raw=true "The bucket was successfuly created")
+> ![Alt text](/images/bucko.png?raw=true "The bucket was successfully created")
