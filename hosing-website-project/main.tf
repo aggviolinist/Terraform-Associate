@@ -44,6 +44,14 @@ resource "aws_s3_object" "index" {
     content_type = "text/html" # what is the content of the file
 }
 
+resource "aws_s3_object" "style" {
+    bucket = aws_s3_bucket.my-bucket.id # Bucket name
+    key = "style.css" # Name of file
+    source = "./web-files/style.css" # Where file is at
+    acl = "public-read" # acls to give permission
+    content_type = "text/css" # what is the content of the file
+}
+
 resource "aws_s3_object" "error" {
     bucket = aws_s3_bucket.my-bucket.id # Bucket name
     key = "error.html" # Name of file
@@ -57,4 +65,18 @@ resource "aws_s3_object" "profile" {
     key = "picdevops.jpeg" # Name of file
     source = "./web-files/picdevops.jpeg" # Where file is at
     acl = "public-read" # acls to give permission
+}
+
+# Create website configuration
+resource "aws_s3_bucket_website_configuration" "website" {
+  bucket = aws_s3_bucket.my-bucket.id
+
+  index_document {
+    suffix = "index.html"
+  }
+
+  error_document {
+    key = "error.html"
+  }
+  depends_on = [ aws_s3_bucket_acl.buko-acls ]
 }

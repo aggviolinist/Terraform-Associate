@@ -24,3 +24,8 @@ main.tf
 terraform plan
 terraform apply -auto-approve
 ```
+> ![Alt text](./images/s3.png?raw=true "The objects were successfully uploaded to the bucket")
+
+## Our image is on S3 and can be viewed
+> ![Alt text](./images/site.png?raw=true "Our website is actually hosted via S3")
+
