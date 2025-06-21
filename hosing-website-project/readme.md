@@ -26,6 +26,21 @@ terraform apply -auto-approve
 ```
 > ![Alt text](./images/s3.png?raw=true "The objects were successfully uploaded to the bucket")
 
+# Add an output file to show our endpoint
+This helps us avoid going to console all the time to get output
+```sh
+output.tf
+```
+
+# final build
+```sh
+terraform destroy -auto-approve
+terraform plan
+terraform apply -auto-approve
+```
+
 ## Our image is on S3 and can be viewed
 > ![Alt text](./images/site.png?raw=true "Our website is actually hosted via S3")
+
+
 
