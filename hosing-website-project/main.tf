@@ -33,3 +33,28 @@ resource "aws_s3_bucket_acl" "buko-acls" {
   bucket = aws_s3_bucket.my-bucket.id
   acl    = "public-read"
 }
+
+# Uploading objects to buckets via terraform 
+# https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_object
+resource "aws_s3_object" "index" {
+    bucket = aws_s3_bucket.my-bucket.id # Bucket name
+    key = "index.html" # Name of file
+    source = "./web-files/index.html" # Where file is at
+    acl = "public-read" # acls to give permission
+    content_type = "text/html" # what is the content of the file
+}
+
+resource "aws_s3_object" "error" {
+    bucket = aws_s3_bucket.my-bucket.id # Bucket name
+    key = "error.html" # Name of file
+    source = "./web-files/error.html" # Where file is at
+    acl = "public-read" # acls to give permission
+    content_type = "text/html" # what is the content of the file
+}
+
+resource "aws_s3_object" "profile" {
+    bucket = aws_s3_bucket.my-bucket.id # Bucket name
+    key = "picdevops.jpeg" # Name of file
+    source = "./web-files/picdevops.jpeg" # Where file is at
+    acl = "public-read" # acls to give permission
+}

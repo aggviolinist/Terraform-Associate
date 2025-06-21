@@ -17,3 +17,10 @@ terraform apply
 index.html
 error.html
 ```
+## Upload the html files to the bucket
+Add the "aws_s3_object" resource to be able to add the index files to bucket
+```sh
+main.tf
+terraform plan
+terraform apply -auto-approve
+```
