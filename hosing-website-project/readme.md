@@ -10,6 +10,7 @@ terraform apply
 1. To ensure the bucket is ready to host a website, it needs to be public
 2. We need to turn off block public access 
 3. We need to grant anyone access to write to the bucket - Disabling ACLS
+> ![Alt text](./images/acls.png?raw=true "The bucket was successfully granted public access")
 
 ## Create and index.html and error.html that will be hosted in the bucket
 ```sh
