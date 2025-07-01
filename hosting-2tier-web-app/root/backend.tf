@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket = "mybuckooo"
+    bucket = "buckoyangu"
     key    = "backend/two-tier-web-app.tfstate"
     region = "us-east-1"
     dynamodb_table = "remote-backend"
