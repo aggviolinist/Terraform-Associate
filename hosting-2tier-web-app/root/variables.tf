@@ -1,9 +1,5 @@
-variable project_name {
-    description = "This is  my project description"
-}
-variable region {
-    description = "This is is our default us-east-1"
-}
+variable project_name {}
+variable region {}
 variable vpc_cidr {}
 variable pub_sub_1a_cidr {}
 variable pub_sub_2b_cidr {}

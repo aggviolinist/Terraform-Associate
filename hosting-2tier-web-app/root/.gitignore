@@ -1,22 +1,15 @@
-*.tfstate
-variable.tf
-.terraform.lock.hcl
-.terraform/
-*.backup
-
-
 
 /**/*.tfstate*
 /**/.terraform
 
-.../modules/key/client_key
-.../modules/key/client_key.pub
+../modules/key/client_key
+../modules/key/client_key.pub
 # Local .terraform directories
 **/.terraform/*
 .terraform/*
 *.hcl
 *.lock*
-.../.terraform/*
+../.terraform/*
 terraform.*
 *.tfvars*
 
