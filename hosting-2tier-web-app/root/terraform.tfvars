@@ -1,2 +1,2 @@
-project_name = "2 tier web app"
+project_name = "two-tier-web-app"
 region = "us-east-1"
