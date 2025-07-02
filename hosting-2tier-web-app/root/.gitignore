@@ -18,4 +18,5 @@ terraform.*
 /**/*.tfstate*
 *.tfstate.*
 
-modules/key*
+modules/key/yes*
+

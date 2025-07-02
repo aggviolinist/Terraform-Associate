@@ -15,3 +15,4 @@ Create a main file and provider file
 ## Create a backend state file
 We take the code from terraform documentation
 > https://developer.hashicorp.com/terraform/language/backend/s3
+> ![Alt text](images/architecture.gif?raw=true "The architecture diagram")

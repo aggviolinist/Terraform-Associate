@@ -8,9 +8,7 @@ variable.tf
 
 /**/*.tfstate*
 /**/.terraform
-
-modules/key*
-modules/key*
+./modules/key/yes*
 # Local .terraform directories
 **/.terraform/*
 .terraform/*
