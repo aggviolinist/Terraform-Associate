@@ -9,8 +9,8 @@ variable.tf
 /**/*.tfstate*
 /**/.terraform
 
-.../modules/key/client_key
-.../modules/key/client_key.pub
+modules/key*
+modules/key*
 # Local .terraform directories
 **/.terraform/*
 .terraform/*
@@ -24,3 +24,4 @@ terraform.*
 *.tfstate
 /**/*.tfstate*
 *.tfstate.*
+

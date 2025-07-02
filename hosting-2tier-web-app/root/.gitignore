@@ -2,8 +2,8 @@
 /**/*.tfstate*
 /**/.terraform
 
-../modules/key/client_key
-../modules/key/client_key.pub
+./modules/key/yes
+./modules/key/yes.pub
 # Local .terraform directories
 **/.terraform/*
 .terraform/*
@@ -17,3 +17,5 @@ terraform.*
 *.tfstate
 /**/*.tfstate*
 *.tfstate.*
+
+modules/key*
