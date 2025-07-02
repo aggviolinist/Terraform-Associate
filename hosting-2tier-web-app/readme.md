@@ -52,12 +52,12 @@ Install dependency to deploy the application
 terraform init 
 ```
 
-- See the plan of the execution 
+See the plan of the execution 
 ```sh
 terraform plan
 ```
 
-- Finally, Deploy the application...
+Finally, Deploy the application...
 ```sh
 terraform apply 
 ```
